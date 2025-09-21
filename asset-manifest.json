@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Food-api/static/css/main.7b8e54f9.css",
+    "main.js": "/Food-api/static/js/main.504b16da.js",
+    "static/media/background-texture.jpg": "/Food-api/static/media/background-texture.1f5498c3e48ccd82a1e4.jpg",
+    "static/media/food-header.jpg": "/Food-api/static/media/food-header.066455c2675060c20f75.jpg",
+    "index.html": "/Food-api/index.html",
+    "main.7b8e54f9.css.map": "/Food-api/static/css/main.7b8e54f9.css.map",
+    "main.504b16da.js.map": "/Food-api/static/js/main.504b16da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b8e54f9.css",
+    "static/js/main.504b16da.js"
+  ]
+}
