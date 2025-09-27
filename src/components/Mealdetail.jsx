@@ -2,7 +2,7 @@ export default function MealDetail({ meal, isLoading, isError }) {
   return (
     <div
       className="meal-details"
-      style={{ backgroundImage: `url(${meal.strMealThumb})` }}
+      style={{ backgroundImage: meal ? `url(${meal.strMealThumb})` : "none" }}
     >
       {isLoading && <p>Loading...</p>}
       {isError && (

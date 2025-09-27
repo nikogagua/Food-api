@@ -144,11 +144,12 @@ button {
 } */
 .meals-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 .meal-card {
   width: 100%;
+  height: 400px;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
@@ -265,4 +266,108 @@ button {
 }
 .pagination-controls span {
   margin: 0 20px;
+}
+
+/* ========= MEDIA QUERIES ========= */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1100px) {
+  .auth-container {
+    width: 80%;
+  }
+
+  .meals-list {
+    grid-template-columns: 1fr 1fr 1fr; /* 2 columns instead of 3 */
+  }
+
+  .meal-card h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .meal-card p {
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+  .header p {
+    font-size: 18px;
+  }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+  .auth-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .meals-list {
+    grid-template-columns: 1fr 1fr; /* 1 column */
+  }
+
+  .meal-card h3 {
+    font-size: 20px;
+  }
+
+  .meal-card p,
+  .meal-details p {
+    font-size: 14px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .search-container {
+    flex-direction: column;
+  }
+  .search-button {
+    width: 100%;
+    border-radius: 9px;
+  }
+
+  .meal-details img {
+    width: 100%;
+  }
+  .meal-detail-box {
+    flex-direction: column;
+  }
+  .meal-detail-box p {
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+  .header p {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile (<= 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .meals-list {
+    grid-template-columns: 350px; /* 1 column */
+  }
+  .header {
+    height: 90vh;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+  .header p {
+    font-size: 14px;
+  }
+
+  .navigation-list a {
+    margin: 5px 0;
+    font-size: 14px;
+  }
 }
